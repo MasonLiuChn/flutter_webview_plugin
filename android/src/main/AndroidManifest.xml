@@ -4,14 +4,14 @@
 
     <application>
         <provider
-            android:name="androidx.core.content.FileProvider"
-            android:authorities="${applicationId}.fileprovider"
+            android:name="com.flutter_webview_plugin.FlutterPluginFlutterWebViewPluginFileProvider"
+            android:authorities="${applicationId}.flutter_webview_plugin_fileprovider"
             android:exported="false"
             android:grantUriPermissions="true"
             tools:replace="android:authorities">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/filepaths" />
+                android:resource="@xml/flutter_webview_plugin_filepaths" />
         </provider>
     </application>
 </manifest>
